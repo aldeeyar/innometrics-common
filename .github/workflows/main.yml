@@ -11,7 +11,7 @@ jobs:
           backend_repos: ['innometrics-auth', 'innometrics-collector', 'innometrics-config', 'innometrics-api', 'innometrics-eureka', 'innometrics-agents']
           frontend_repos: ['innometrics-dashboard']
           backend_token: ${{ secrets.BACKEND_TOKEN }}
-          frontend_token:  ${{ secrets.BACKEND_TOKEN }}
+          frontend_token:  ${{ secrets.FRONTEND_TOKEN }}
           backend_owner:  ${{ secrets.BACKEND_OWNER }}
           frontend_owner:  ${{ secrets.FRONTEND_OWNER }}
           backend_workflow_filename: ${{ secrets.BACKEND_WORKFLOW_FILENAME }}
