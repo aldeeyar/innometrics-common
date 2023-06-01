@@ -12,7 +12,7 @@ jobs:
             innometrics-auth
             innometrics-collector
             innometrics-config
-            innometrics-api
+            innometrics-restapi
             innometrics-eureka
             innometrics-agents
           frontend_repos: |-
