@@ -6,7 +6,7 @@ jobs:
     name: Triggering All Pipelines
     steps:
       - name: Triggering All Pipelines
-        uses: aldeeyar/innometrics-common-pipelinesaldeeyar/hello-world-javascript-action@v1.3
+        uses: aldeeyar/innometrics-common-pipelines@v1.3
         with:
           backend_repos: |-
             innometrics-auth
