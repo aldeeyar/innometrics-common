@@ -1,0 +1,25 @@
+on: [workflow_dispatch]
+
+jobs:
+  run_all_pipelines:
+    runs-on: ubuntu-latest
+    name: Triggering All Pipelines
+    steps:
+      - name: Triggering All Pipelines
+        uses: aldeeyar/innometrics-common-pipelinesaldeeyar/hello-world-javascript-action@v1.2
+        with:
+          backend_repos: ['innometrics-auth', 'innometrics-collector', 'innometrics-config', 'innometrics-api', 'innometrics-eureka', 'innometrics-agents']
+          frontend_repos: ['innometrics-dashboard']
+          backend_token: ${{ secrets.BACKEND_TOKEN }}
+          frontend_token:  ${{ secrets.BACKEND_TOKEN }}
+          backend_owner:  ${{ secrets.BACKEND_OWNER }}
+          frontend_owner:  ${{ secrets.FRONTEND_OWNER }}
+            description: ''
+            required: true
+            default: ''
+          backend_workflow_filename: ${{ secrets.BACKEND_WORKFLOW_FILENAME }}
+            description: ''
+            required: true
+            default: ''
+          frontend_workflow_filename: ${{ secrets.FRONTEND_WORKFLOW_FILENAME }}
+          event_type: ${{ secrets.EVENT_TYPE }}
