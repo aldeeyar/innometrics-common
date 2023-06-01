@@ -6,7 +6,7 @@ jobs:
     name: Triggering All Pipelines
     steps:
       - name: Triggering All Pipelines
-        uses: aldeeyar/innometrics-common-pipelines@v1.5
+        uses: aldeeyar/innometrics-common-pipelines@v1.6
         with:
           backend_repos: |-
             innometrics-auth
